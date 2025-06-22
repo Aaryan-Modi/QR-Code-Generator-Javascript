@@ -1,0 +1,92 @@
+:root{
+    --bcg-color: gold;
+    --btn-bcg-color: black;
+    --btn-color: white;
+    
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 650px;
+}
+
+.container{
+    background-color:var(--bcg-color);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 400px;
+}
+
+header{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 15px 0px;
+}
+
+.textinp input{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+.textinp input:focus{
+    outline: 2px solid black;
+}
+
+#qrcode{
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#qrcode img{
+    padding: 20px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.buttons a{
+    text-decoration: none;
+    padding: 15px 15px;
+    background-color: var(--btn-bcg-color);
+    color: var(--btn-color);
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
